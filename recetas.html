@@ -4,11 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Recetas</title>
+
+    <style>
+        #body_recetas  h1{
+        font-size: 24px;
+        color: #fff;
+        position: relative
+        }
+        #body_recetas {
+        font-size: 12px;
+        color: rgba(255, 255, 255, 0.699);
+        position: relative
+        }
+        #body_recetas td {
+        font-size: 18px;
+        color: rgba(238, 240, 226, 0.699);
+        position: relative
+        }
+    </style>
 </head>
-    <body>
+    <body id="body_recetas">
         <header>
-            <h1>Aca Vemos como armar una tabla con contenidos</h1>
+            <h1>Veamos el contenido de nuestras recetas musicales</h1>
         </header>
         
         <table name="t1" border=5 align="center">
@@ -29,5 +48,35 @@
             </tr>
         </table>
         <button>Ver Receta</button>
+        <fieldset name="recetas">
+            <nav>
+                <div id="div1">
+                    <ul type="square">
+                        <li>elemento ul</li>
+                        <li>elemento ul</li>
+                    </ul>
+                    <ol start="2" type="A">
+                        <li>elemento ol</li>
+                        <li>elemento ol</li>
+                    </ol>
+                    <dl>
+                        <dt>Leches</dt>
+                            <dd>descremada</dd>
+                            <dd>entera</dd>
+                        <dt>Quesos</dt>
+                            <dd>fontina</dd>
+                            <dd>Roqiefort</dd>
+                            <DD>sardo</DD>
+                        
+                    </dl>
+                </div>
+                <div id="2">
+        
+                </div>
+            
+               
+               
+            </nav>
+        </fieldset>
     </body>
 </html>

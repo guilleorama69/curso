@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <title>La del Guillote</title>
+        <link>
+        <style>
+            #body_contacto  h1{
+            font-size: 24px;
+            color: #fff;
+            position: relative
+            }
+            #body_contacto {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.699);
+            position: relative
+            }
+            #body_contacto legend {
+            font-size: 18px;
+            color: rgba(238, 240, 226, 0.699);
+            position: relative
+            }
+
+            #submit {
+            position: relative;
+            background-color: #44a0bdd3;
+            border: none;
+            font-size: 12px;
+            color: #f8f6f6;
+            padding: 20px;
+            width: 150px;
+            text-align: center;
+            transition-duration: 0.4s;
+            text-decoration: none;
+            overflow: hidden;
+            cursor: pointer;
+            }
+            
+            #submit::after{
+            content: "";
+            background: #2e5d929d;
+            display: block;
+            position: absolute;
+            padding-top: 300%;
+            padding-left: 350%;
+            margin-left: -20px !important;
+            margin-top: -120%;
+            opacity: 80;
+            transition: all 0.8s
+            }
+            
+            #submit :active:after {
+            padding: 0;
+            margin: 0;
+            opacity: 1;
+            transition: 0s
+            }
+        </style>
+        <script>
+
+        </script>
+    </head>
+    <body id="body_contacto">
+        <header>
+            <H1><b>Hola navegantes</b></H1>
+            
+        </header>
+           
+            <form name="frm_contacto " method="post" action="show_data.html">
+                <fieldset>
+                    <legend >Lo basico</legend>
+                        <table width=50% align="center">
+                            <tr align="margin-left">
+                                <td>Contame como te llamas:</td>
+                                <td><input type= "text" required id= "name" placeholder="Decime cual cual cual es tu nombre "></td>
+                            </tr>
+                            <tr align="margin-left">
+                                <td>No te olvides tu apellido:</td>
+                                <td><input type= "text" required id= "last_name" placeholder="es compuesto???"></td>
+                            </tr>
+                            <tr align="margin-left">
+                                <td>Si queres que te escriba decime donde: </td>
+                                <td><input type= "email" required id= "email" placeholder="ejemplo@mail.com "></td>
+                            </tr>
+                            <tr align="margin-left">
+                                <td>Tu numero de documento: </td>
+                                <td><input type= "number" required id= "dni" placeholder="SOLO NUMEROS!!"></td>
+                            </tr>
+                            <tr align="margin-left">
+                                <td>Direccion: </td>
+                                <td><input type= "text" id= "address" ></td>
+                            </tr>
+                            <tr align="margin-left">
+                                <td>Codigo Postal: </td>
+                                <td><input type= "number" id= "postal" placeholder="SOLO NUMEROS!!"></td>
+                            </tr>
+                            <tr align="margin-left">
+                                <td>Cuando Naciste?: </td>
+                                <td><input type= "date" id= "birthday" placeholder="dd/mm/YYYY"></td>
+                            </tr>
+                        </table>
+
+                        <legend>Gustas de contenido exclusivo!!</legend>
+
+                        <table width=50% align="center">                          
+                            <tr align="margin-left">
+                                <td>Dejame un pass para loguearte:</td>
+                                <td><input type= "password" id= "pass" ></td>
+                            </tr>
+                            <tr align="margin-left">
+                                <td>Decime otra vez que no entendi:</td>
+                                <td><input type= "password" id= "repass"></td>
+                            </tr>
+                        </table>                                
+                
+
+               
+                    <legend >Contame tu genero</legend>
+                        Feminazi<input required type= "radio"  name= "genero"  >
+                        Machirulo<input required type= "radio"  name= "genero"  >
+                        NoBinario<input required type= "radio"  name= "genero"  >
+                        Transgenero<input required type= "radio"  name= "genero"  >
+                        Alguno de 112<input required type= "radio"  name= "genero"  >
+                    
+                        <br>
+                        <br>
+
+                    <legend >Cuanto estudiaste???</legend>
+                        Primario <input required type= "checkbox"  name= "estudios"  > 
+                        Secundario <input required type= "checkbox"  name= "estudios"  > 
+                        Terciario <input required type= "checkbox"  name= "estudios"  > 
+                        Universitario <input required type= "checkbox"  name= "estudios"  > 
+
+                </fieldset>
+                
+                <div id="0">
+                    <p>Algo para contarnos?</p>    
+                    <textarea placeholder="porque sibarita es tan rica???...." width=100%></textarea> <br>
+                </div>
+               <input type= "submit" id= "submit" value="Mandale nomas" >
+               
+            </form>  
+            
+        
+    </body>
+</html>

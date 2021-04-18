@@ -1,71 +1,143 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="utf-8"/>
-        <title>La del Guillote</title>
-        <link>
-        <script></script>
-    </head>
-    <body>
-        <header>
-            <H1><b>Hola Chiques</b></H1>
-            
-        </header>
-           
-            <form method="post" action="main_recetas.html">
-                <fieldset>
-                    <legend>Lo basico</legend>
-                    <p>Contame como te llamas: <input type= "text" required id= "name" placeholder="Decime cual cual cual es tu nombre "></p>
-                    <p>No te olvides tu apellido: <input type= "text" required id= "lastname" placeholder=" es de alta sociedad??"></p>
-                    <p>Si queres que te escriba decime donde: <input type= "email" required id= "email" ></p>
-                    <p>Demosle un poco de seguridad!! <br><br>
-                    Dejame un pass para loguearte: <input type= "password" required id= "pass" ></p>
-                    <p>Decime otra vez que no entendi: <input type= "password" required id= "repass" ></p>
-                </fieldset>
-                <fieldset >
-                    <legend>Contame tu genero</legend>
-                    <legend>Feminazi<input type= "radio"  name= "genero"  ></legend>
-                    <legend>Machirulo<input type= "radio"  name= "genero"  ></legend>
-                    <legend>NoBinario<input type= "radio"  name= "genero"  ></legend>
-                    <legend>Transgenero<input type= "radio"  name= "genero"  ></legend>
-                    <legend>Alguno de 112<input type= "radio"  name= "genero"  ></legend>
-                </fieldset>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--
+    <script type="text/javascript">
+        function toggleVisivilityBY(id, tohide) {
+             if(document.getElementById(id).style.visibility=="hidden") {
                 
-                <div id="0">
-                    
-                    <p>Algo para contarnos?</p>    
-                        <textarea placeholder="porque sibarita es tan rica???" width="100%"></textarea> <br>
-                </div>
-                <input type= "submit" id= "submit" value="Mandale nomas" >
-            </form>  
-            <div id="1">
-                <ul type="square">
-                    <li>elemento ul</li>
-                    <li>elemento ul</li>
-                </ul>
-                <ol start="2" type="A">
-                    <li>elemento ol</li>
-                    <li>elemento ol</li>
-                </ol>
-                <dl>
-                    <dt>Leches</dt>
-                        <dd>descremada</dd>
-                        <dd>entera</dd>
-                    <dt>Quesos</dt>
-                        <dd>fontina</dd>
-                        <dd>Roqiefort</dd>
-                        <DD>sardo</DD>
-                    
-                </dl>
-            </div>
-            <div id="2">
+               document.getElementById(id).style.visibility="visible";
+               for (i=0;i<tohide.length; i++){
+                   
+                   document.getElementById(tohide[i]).style.visibility="hidden";
+               }
+               
+             } 
+       
+            }
+    
+    </script> 
+    <button onclick="toggleVisivilityBY('recetas',['about','contacto'])"><b><ins>Recetas de Cocina </ins></b> </button>
+    <button onclick="toggleVisivilityBY('about', ['recetas','contacto'])"><b><ins>Nuestra Historia</ins></b></button>
+    <button onclick="toggleVisivilityBY('contacto',['about','recetas'])"><b><ins>Contacto</ins></b> </button>
+    -->
+    <style>
+        #body {
+            background: url(images/buceo.jpg) no-repeat center center fixed;
+            background-size: cover;
+            -moz-background-size: cover;
+            -webkit-background-size: cover;
+            -o-background-size: cover;
+            }
+        #body H1 {
+            font-size: 60px;
+            color: #fff;
+            position: relative
+            }
+        #contacto {
+            font-size: 18px;
+            color: #fff;
+            position: relative
+        }
+    
+        #botones button {
+          position: relative;
+          background-color: #44a0bdd3;
+          border: none;
+          font-size: 12px;
+          color: #f8f6f6;
+          padding: 20px;
+          width: 150px;
+          text-align: center;
+          transition-duration: 0.4s;
+          text-decoration: none;
+          overflow: hidden;
+          cursor: pointer;
+        }
+        
+        #botones button:after {
+          content: "";
+          background: #2e5d929d;
+          display: block;
+          position: absolute;
+          padding-top: 300%;
+          padding-left: 350%;
+          margin-left: -20px !important;
+          margin-top: -120%;
+          opacity: 80;
+          transition: all 0.8s
+        }
+        
+        #botones button:active:after {
+          padding: 0;
+          margin: 0;
+          opacity: 1;
+          transition: 0s
+        }
+    </style>
 
-            </div>
-            <div id="3">
-
-            </div>
-        <footer>
-            <a href="mailto:darkguilleorama@gmail">que olor a patas</a>
-        </footer>
-    </body>
+    <script type="text/javascript">
+        function setSource(source){
+            document.getElementById('frame').src = source;
+            document.getElementById('frame').style.visibility="visible";
+        }
+    </script>
+    <div id="botones">
+        <button onclick="setSource('recetas.html')"><b><ins>Recetas de Cocina </ins></b> </button>
+        <button onclick="setSource('about.html')"><b><ins>Nuestra Historia </ins></b> </button>
+        <button onclick="setSource('form_contacto.html')"><b><ins>Contacto </ins></b> </button>
+    </div>
+    <title>Gustito a Rico ;)</title>
+    
+</head>
+<body id="body">
+    <header>
+        <H1 align='Center'><br>La cocina de Guilleorama</H1>
+    </header>
+    <p align = "center">
+        <iframe id=frame src="source" style="visibility:hidden" width=100% height="600"></iframe>
+        <!--
+        <iframe id=about   src="about.html" style="visibility:hidden" width=720 height="500"></iframe>
+        <iframe id=contacto   src="contacto.html" style="visibility:hidden" width=720 height="500"></iframe>
+        -->
+    </p>
+    <header>hola</header>
+    
+    <main>
+        <section>
+            seccion 1
+          
+            <p>Bienvenidos a Codo a Codo<br>2021</p>
+        </section>
+        <section>
+            seccion 2
+           
+        </section>
+    
+        <aside align = "right">lateral
+         
+        
+    </main>
+    <footer id ="contacto" align = 'center'>
+        <table name="t2" border=5 align="center">
+            <tr>
+                <Td width="90" >Buscanos!!</Td>
+                <Td>
+                    <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2069.2776814998347!2d-58.39296300525265!3d-34.58459612056447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaa1b9cf78d5%3A0xa96188dae8b165db!2sAv.%20del%20Libertador%201473%2C%20C1425AAA%20CABA!5e0!3m2!1ses-419!2sar!4v1618665732485!5m2!1ses-419!2sar"
+                            width="300" 
+                            height="200" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                    </iframe>
+                </Td>
+            </tr>
+        </table>
+        <a href = mailto:guilleorama@gmail.com><address>Diseño y Derechos para: </address><b>Guilleorama</b></a>
+    </footer>
+</body>
 </html>
