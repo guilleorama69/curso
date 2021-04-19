@@ -42,8 +42,52 @@
             color: #fff;
             position: relative
         }
+           
+            #header {
+                    
+                    font-family:Arial, Helvetica, sans-serif;
+                }
+                
+                ul, ol {
+                    list-style:none;
+                }
     
-        #botones button {
+               
+
+                .nav li b {
+                    background-color:rgba(56, 63, 161, 0.596);
+                    color:#fff;
+                    text-decoration:none;
+                    padding:8px 20px;
+                    display:block;
+                }
+                
+                .nav li b:hover {
+                    background-color:#3461c4;
+                }
+                
+                .nav li ul {
+                    display:none;
+                    position:absolute;
+                    min-width:140px;
+                }
+                
+                .nav li:hover > ul {
+                    display:block;
+                    
+                }
+                
+                .nav li ul li {
+                    position:relative;
+                }
+                
+                .nav li ul li ul {
+                    right:-140px;
+                    top:0px;
+                }
+
+    
+        /*#botones button {
           position: relative;
           background-color: #44a0bdd3;
           border: none;
@@ -75,8 +119,8 @@
           padding: 0;
           margin: 0;
           opacity: 1;
-          transition: 0s
-        }
+          transition: 0s 
+        }*/
     </style>
 
     <script type="text/javascript">
@@ -85,42 +129,51 @@
             document.getElementById('frame').style.visibility="visible";
         }
     </script>
-    <div id="botones">
-        <button onclick="setSource('recetas.html')"><b><ins>Recetas de Cocina </ins></b> </button>
-        <button onclick="setSource('about.html')"><b><ins>Nuestra Historia </ins></b> </button>
-        <button onclick="setSource('form_contacto.html')"><b><ins>Contacto </ins></b> </button>
-    </div>
+    
+    
     <title>Gustito a Rico ;)</title>
     
 </head>
+
+    
+
 <body id="body">
     <header>
-        <H1 align='Center'><br>La cocina de Guilleorama</H1>
+        <div id="header" >                       
+            <ul class="nav">                        
+                <li width=33%><b>Recetas</b> 
+                    <ul>
+                        <li onclick="setSource('pizza.html')"><b>Masa de Pizza</b> </li>
+                        <li onclick="setSource('pan.html')"><b>Masa de Pan</b></li>
+                        <li onclick="setSource('medialunas.html')"><b>Medialunas de Manteca</b> </li>
+                        <li onclick="setSource('tallarines.html')"><b>Tallarines al Huevo</b> </li>
+                    </ul>
+                </li>
+            </ul>   
+            <ul class="nav">          
+                <li><b>Sobre nosotros</b>
+                    <ul>
+                        <li onclick="setSource('about.html')"><b>Nuestra Historia</b></li>
+                        <li onclick="setSource('locales.html')"><b>Encontra nuestros locales</b></li>
+                    </ul>
+                </li>
+            </ul>    
+            <ul class="nav">            
+                <li onclick="setSource('form_contacto.html')"><b>Contacto</b></li>
+            </ul>
+        </div>
+        <div>
+            <H1 align='Center'><br>La cocina de Guilleorama</H1>
+        </div>
     </header>
-    <p align = "center">
+    <nav align = "center">
         <iframe id=frame src="source" style="visibility:hidden" width=100% height="600"></iframe>
         <!--
         <iframe id=about   src="about.html" style="visibility:hidden" width=720 height="500"></iframe>
         <iframe id=contacto   src="contacto.html" style="visibility:hidden" width=720 height="500"></iframe>
         -->
-    </p>
-    <header>hola</header>
+    </nav>   
     
-    <main>
-        <section>
-            seccion 1
-          
-            <p>Bienvenidos a Codo a Codo<br>2021</p>
-        </section>
-        <section>
-            seccion 2
-           
-        </section>
-    
-        <aside align = "right">lateral
-         
-        
-    </main>
     <footer id ="contacto" align = 'center'>
         <table name="t2" border=5 align="center">
             <tr>
