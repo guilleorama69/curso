@@ -1,0 +1,97 @@
+
+#body {
+    background: url(images/buceo.jpg) no-repeat center center fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    }
+#body H1 {
+    font-size: 60px;
+    color: #fff;
+    position: relative
+    }
+#contacto {
+    font-size: 18px;
+    color: #fff;
+    position: relative
+}
+   
+    #header {
+            
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        
+        ul, ol {
+            list-style:none;
+        }
+
+       
+
+        .nav li b {
+            background-color:rgba(56, 63, 161, 0.596);
+            color:#fff;
+            text-decoration:none;
+            padding:8px 20px;
+            display:block;
+        }
+        
+        .nav li b:hover {
+            background-color:#3461c4;
+        }
+        
+        .nav li ul {
+            display:none;
+            position:absolute;
+            min-width:140px;
+        }
+        
+        .nav li:hover > ul {
+            display:block;
+            
+        }
+        
+        .nav li ul li {
+            position:relative;
+        }
+        
+        .nav li ul li ul {
+            right:-140px;
+            top:0px;
+        }
+
+
+/*#botones button {
+  position: relative;
+  background-color: #44a0bdd3;
+  border: none;
+  font-size: 12px;
+  color: #f8f6f6;
+  padding: 20px;
+  width: 150px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#botones button:after {
+  content: "";
+  background: #2e5d929d;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 80;
+  transition: all 0.8s
+}
+
+#botones button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s 
+}*/
