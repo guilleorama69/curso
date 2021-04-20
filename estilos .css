@@ -1,0 +1,71 @@
+
+        body {
+            background: url(images/buceo.jpg) no-repeat center center fixed;
+            background-size: cover;
+            -moz-background-size: cover;
+            -webkit-background-size: cover;
+            -o-background-size: cover;
+        }
+        h1 {
+            font-size: 52px;
+            color: rgba(255, 255, 255, 0.849);
+            text-align: center;
+        }
+        table {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        footer {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.753);
+        }
+        .contenedor {
+            box-align: center;
+            border: transparent;
+        }  
+       .contenedor iframe {
+           border: transparent;
+           width: 100%;
+           height: 600px;
+           visibility: hidden;
+       }         
+
+
+
+       /*Comienza menu desplegable*/
+       
+        ul, ol {
+            list-style:none;
+        }        
+        .nav {
+             
+            margin:0 auto; 
+        }
+        .nav > li {
+            float:left;
+        }        
+        .nav li b {
+            background-color:rgba(23, 18, 90, 0.562);
+            color:#fff;
+            padding:6px 20px;
+            display:block;
+        }        
+        .nav li b:hover {
+            background-color:#372db9cc;
+            cursor: pointer;
+        }        
+        .nav li ul {
+            display:none;
+            position:absolute;
+            min-width:140px;
+        }        
+        .nav li:hover > ul {
+            display:block;
+        }        
+        .nav li ul li {
+            position:relative;
+        }
+        /*Termina menu desplegable*/
