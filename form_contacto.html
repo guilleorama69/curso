@@ -2,103 +2,52 @@
 <html lang="es">
     <head>
         <meta charset="utf-8"/>
-        <title>La del Guillote</title>
-        <link>
-        <style>
-            #body_contacto  h1{
-            font-size: 24px;
-            color: #fff;
-            position: relative
-            }
-            #body_contacto {
-            font-size: 12px;
-            color: rgba(255, 255, 255, 0.699);
-            position: relative
-            }
-            #body_contacto legend {
-            font-size: 18px;
-            color: rgba(238, 240, 226, 0.699);
-            position: relative
-            }
-
-            #submit {
-            position: relative;
-            background-color: #44a0bdd3;
-            border: none;
-            font-size: 12px;
-            color: #f8f6f6;
-            padding: 20px;
-            width: 150px;
-            text-align: center;
-            transition-duration: 0.4s;
-            text-decoration: none;
-            overflow: hidden;
-            cursor: pointer;
-            }
-            
-            #submit::after{
-            content: "";
-            background: #2e5d929d;
-            display: block;
-            position: absolute;
-            padding-top: 300%;
-            padding-left: 350%;
-            margin-left: -20px !important;
-            margin-top: -120%;
-            opacity: 80;
-            transition: all 0.8s
-            }
-            
-            #submit :active:after {
-            padding: 0;
-            margin: 0;
-            opacity: 1;
-            transition: 0s
-            }
-        </style>
+        
+        <link rel="stylesheet" type="text/css" href="./estilos .css">
+        
         <script>
 
         </script>
     </head>
-    <body id="body_contacto">
+    <body>
         <header>
-            <H1><b>Hola navegantes</b></H1>
+            <h2><b>Hola navegantes</b></h2>
             
         </header>
            
             <form name="frm_contacto " method="post" action="show_data.html">
                 <fieldset>
-                    <legend >Lo basico</legend>
-                        <table width=50% align="center">
-                            <tr align="margin-left">
-                                <td>Contame como te llamas:</td>
-                                <td><input type= "text" required id= "name" placeholder="Decime cual cual cual es tu nombre "></td>
-                            </tr>
-                            <tr align="margin-left">
-                                <td>No te olvides tu apellido:</td>
-                                <td><input type= "text" required id= "last_name" placeholder="es compuesto???"></td>
-                            </tr>
-                            <tr align="margin-left">
-                                <td>Si queres que te escriba decime donde: </td>
-                                <td><input type= "email" required id= "email" placeholder="ejemplo@mail.com "></td>
-                            </tr>
-                            <tr align="margin-left">
-                                <td>Tu numero de documento: </td>
-                                <td><input type= "number" required id= "dni" placeholder="SOLO NUMEROS!!"></td>
-                            </tr>
-                            <tr align="margin-left">
-                                <td>Direccion: </td>
-                                <td><input type= "text" id= "address" ></td>
-                            </tr>
-                            <tr align="margin-left">
-                                <td>Codigo Postal: </td>
-                                <td><input type= "number" id= "postal" placeholder="SOLO NUMEROS!!"></td>
-                            </tr>
-                            <tr align="margin-left">
-                                <td>Cuando Naciste?: </td>
-                                <td><input type= "date" id= "birthday" placeholder="dd/mm/YYYY"></td>
-                            </tr>
-                        </table>
+                    <legend>Lo basico</legend>
+                        <div class="contenedor_form">
+                            <div class="imputs">                            
+                                <span>Contame como te llamas:</span>
+                                <input type= "text" required id= "name" placeholder="Decime cual cual cual es tu nombre ">
+                            </div>
+                            <div class="imputs">    
+                                <span>No te olvides tu apellido:</span>
+                                <input type= "text" required id= "last_name" placeholder="es compuesto???">
+                            </div>    
+                            <div class="imputs">    
+                                <span>Si queres que te escriba decime donde: </span>
+                                <input type= "email" required id= "email" placeholder="ejemplo@mail.com ">
+                            </div>   
+                            <div class="imputs">
+                                <span>Tu numero de documento: </span>
+                                <input type= "number" required id= "dni" placeholder="SOLO NUMEROS!!">
+                            </div>    
+                            <div class="imputs">
+                                <span>Direccion: </span>
+                                <input type= "text" id= "address" >
+                            </div>                                    
+                            <div class="imputs">
+                                <span>Codigo Postal: </span>
+                                <input type= "number" id= "postal" placeholder="SOLO NUMEROS!!">
+                            </div>
+                            <div class="imputs">    
+                                <span>Cuando Naciste?: </span>
+                                <input type= "date" id= "birthday" placeholder="dd/mm/YYYY">
+                            </div>
+                        </div>
 
                         <legend>Gustas de contenido exclusivo!!</legend>
 

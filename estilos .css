@@ -1,124 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0rem auto;
+}
 
-        
-        
-        header{
-            width: 100%;
-            background-color:#632db956;
-            display:inline-block;
-            border-radius: 5px;
-            
+header {
+  width: 100%;
+  border-radius: 0.3rem;
+  text-align: center;
+}
+.block {
+  display: inline-block;
+}
+.main_body {
+  background-color: darkblue;
+  background: url(images/buceo.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
 
-        }
-        
-        body {
-            background: url(images/buceo.jpg) no-repeat center center fixed;
-            background-size: auto;
-            -moz-background-size: cover;
-            -webkit-background-size: cover;
-            -o-background-size: cover;
-        }
+h1 {
+  padding: 0.25rem;
+  font-size: 3.5rem;
+  color: rgba(255, 255, 255, 0.849);
+}
+h2 {
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.849);
+}
 
-        h1 {
-            font-size: 52px;
-            color: rgba(255, 255, 255, 0.849);
-            text-align: center;
-        }
-        table {
-            margin-left: auto;
-            margin-right: auto;
-        }
-        a {
-            font-size: 18px;
-            text-decoration: none;
-            }
+span {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.849);
+}
 
-        .contenedor_foot { 
-            padding-top: 5px;          
-            background-color:#bbc1d188;
-            display: flex;         
-            border-radius: 5px;
-            border: 3px;
-            border-color: aqua;
-        }
+a {
+  font-size: 1.25rem;
+  text-decoration: none;
+}
 
-        .contenedor_icons {
-            padding-right: 8px;
-            display: flex;
-            justify-content: flex-end;
-        }
+input {
+  border-radius: 0.3rem;
+  border: rgba(104, 151, 221, 0.445);
+  border-style: solid;
+  padding-left: 0.32rem;
+  margin-top: 0.25rem;
+}
 
-        contenedor_firma {
-           align-items: flex-start;
-            
-        }
+/*Empieza el FOOTER*/
 
-        .contenedor_foot div {
-            width: 100%;
-            min-height: 60px;
-            height:auto;
-            
-        }
-        
-        .icons_footer {
-            padding-left: 8px;
-        }
-        
-        .icons_footer :hover{
-            width: 22px;
-            height: 22px;
-                 
-        }
-        
-       /* las cosas dentro del IFRAME*/ 
-        .contenedor {
-            box-align: center;
-            border: transparent;
-        }  
-       .contenedor iframe {
-           border: transparent;
-           width: 100%;
-           height: 600px;
-           visibility: hidden;
-       }         
+.contenedor_icons {
+  width: 100%;
+  padding-top: 0.35rem;
+  background-color: #bbc1d188;
+  text-align: center;
+  height: 5rem;
+  border-radius: 0.35rem;
+  position: fixed;
+  bottom: 0rem;
+}
 
-       /*EOF las cosas dentro del IFRAME*/ 
+.icons_footer {
+  padding: 0.3rem;
+}
 
-       /*Comienza menu desplegable*/
-       
-        ul, ol {
-            list-style:none;
-            
-        }        
-        .nav {
-           
-            margin:0 auto; 
-          
-        }
-        .nav > li {
-            float:left;
-           
-        }        
-        .nav li b {
-            background-color:rgba(23, 18, 90, 0.938);
-            color:#fff;
-            padding:6px 10px;
-            display:block; 
-           
-        }        
-        .nav li b:hover {
-            background-color:#372db9cc;
-            cursor: pointer;
-            border-radius: 15px;
-        }        
-        .nav li ul {
-            display:none;
-            position:absolute;
-            min-width:140px;
-        }        
-        .nav li:hover > ul {
-            display:block;
-        }        
-        .nav li ul li {
-            position:relative;
-        }
-        /*Termina menu desplegable*/
+.contenedor_icons address {
+  width: 100%;
+  left: auto;
+  position: fixed;
+  bottom: 1rem;
+}
+
+.icons_footer :hover {
+  width: 1.5em;
+  height: 1.5rem;
+}
+/* Termina el FOOTER */
+
+/* las cosas dentro del IFRAME */
+
+.contenedor iframe {
+  border: transparent;
+  width: 100%;
+  min-height: 600px;
+  visibility: hidden;
+}
+
+/*EOF las cosas dentro del IFRAME*/
+
+/*Comienza menu desplegable*/
+
+ul,
+ol {
+  list-style: none;
+}
+.nav {
+  margin: 0 auto;
+}
+.nav > li {
+  float: left;
+}
+.nav li b {
+  text-align: left;
+  background-color: rgba(23, 18, 90, 0.938);
+  color: #fff;
+  padding: 0.2rem 0.4rem;
+  display: block;
+}
+.nav li b:hover {
+  background-color: #362db9e0;
+  cursor: pointer;
+  border-radius: 1em;
+  display: block;
+}
+.nav li ul {
+  display: none;
+  position: absolute;
+  min-width: 140px;
+}
+.nav li:hover > ul {
+  display: block;
+}
+.nav li ul li {
+  position: relative;
+}
+/*Termina menu desplegable*/
+
+/**arraca el formulario*/
+
+.contenedor_form div {
+  width: fit-content;
+  height: auto;
+  flex-direction: column;
+}
+.inputs {
+  color: aquamarine;
+}
+
+/*TERMINA el formulario*/
