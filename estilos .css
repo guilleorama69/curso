@@ -1,52 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Freckle+Face&family=Inconsolata:wght@300&family=Original+Surfer&display=swap");
+
 * {
+  font-family: "Inconsolata", monospace;
   box-sizing: border-box;
   margin: 0rem auto;
 }
 
 header {
   width: 100%;
-  border-radius: 0.3rem;
   text-align: center;
 }
+
 .block {
-  display: inline-block;
+  display: block;
 }
 .main_body {
   background-color: darkblue;
   background: url(images/buceo.jpg) no-repeat center center fixed;
   background-size: cover;
 }
-
 h1 {
+  margin-top: 1rem;
+  font-family: "Freckle Face", cursive;
   padding: 0.25rem;
   font-size: 3.5rem;
   color: rgba(255, 255, 255, 0.849);
 }
 h2 {
+  font-family: "Freckle Face";
   font-size: 2rem;
   color: rgba(255, 255, 255, 0.849);
 }
-
-span {
-  font-size: 1rem;
-  color: rgba(255, 255, 255, 0.849);
-}
-
 a {
   font-size: 1.25rem;
   text-decoration: none;
 }
-
-input {
-  border-radius: 0.3rem;
-  border: rgba(104, 151, 221, 0.445);
-  border-style: solid;
-  padding-left: 0.32rem;
-  margin-top: 0.25rem;
-}
-
 /*Empieza el FOOTER*/
-
 .contenedor_icons {
   width: 100%;
   padding-top: 0.35rem;
@@ -57,31 +46,27 @@ input {
   position: fixed;
   bottom: 0rem;
 }
-
 .icons_footer {
   padding: 0.3rem;
 }
-
 .contenedor_icons address {
   width: 100%;
   left: auto;
   position: fixed;
   bottom: 1rem;
 }
-
 .icons_footer :hover {
   width: 1.5em;
   height: 1.5rem;
 }
 /* Termina el FOOTER */
-
 /* las cosas dentro del IFRAME */
-
 .contenedor iframe {
   border: transparent;
   width: 100%;
   min-height: 600px;
   visibility: hidden;
+  padding: 1rem;
 }
 
 /*EOF las cosas dentro del IFRAME*/
@@ -94,6 +79,7 @@ ol {
 }
 .nav {
   margin: 0 auto;
+  left: auto;
 }
 .nav > li {
   float: left;
@@ -110,6 +96,7 @@ ol {
   cursor: pointer;
   border-radius: 1em;
   display: block;
+  transition: 0.5s;
 }
 .nav li ul {
   display: none;
@@ -127,12 +114,39 @@ ol {
 /**arraca el formulario*/
 
 .contenedor_form div {
-  width: fit-content;
   height: auto;
   flex-direction: column;
+  display: inline-table;
 }
-.inputs {
-  color: aquamarine;
+legend {
+  margin-top: 1rem;
+  font-family: "Freckle Face";
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.849);
+}
+span {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.849);
+  margin-top: 0.25rem;
+  margin-top: 0.3rem;
 }
 
+input,
+select {
+  margin-top: 0.3rem;
+  font-size: 1rem;
+  border-radius: 0.3rem;
+  border: rgba(104, 151, 221, 0.445);
+  height: 1.5rem;
+  margin-top: 0.25rem;
+}
+.pass {
+  display: inline-table;
+
+  margin-top: 1rem;
+}
+.pass div {
+  width: 100%;
+  height: auto;
+}
 /*TERMINA el formulario*/

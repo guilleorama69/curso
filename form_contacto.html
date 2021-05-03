@@ -11,78 +11,72 @@
     </head>
     <body>
         <header>
-            <h2><b>Hola navegantes</b></h2>
-            
+            <h2>Hola navegantes</h2>
         </header>
            
-            <form name="frm_contacto " method="post" action="show_data.html">
+            <form class="frm_contacto " method="post" action="show_data.html">
                 <fieldset>
                     <legend>Lo basico</legend>
                         <div class="contenedor_form">
-                            <div class="imputs">                            
-                                <span>Contame como te llamas:</span>
-                                <input type= "text" required id= "name" placeholder="Decime cual cual cual es tu nombre ">
+                            <div>                            
+                                <span class="block">Contame como te llamas:</span>
+                                <input type= "text" required placeholder="Decime cual cual cual es tu nombre ">
                             </div>
-                            <div class="imputs">    
-                                <span>No te olvides tu apellido:</span>
-                                <input type= "text" required id= "last_name" placeholder="es compuesto???">
+                            <div>    
+                                <span class="block">No te olvides tu apellido:</span>
+                                <input type= "text" required placeholder="es compuesto???">
                             </div>    
-                            <div class="imputs">    
-                                <span>Si queres que te escriba decime donde: </span>
-                                <input type= "email" required id= "email" placeholder="ejemplo@mail.com ">
+                            <div>    
+                                <span class="block">Donde te escrivo: </span>
+                                <input type= "email" required placeholder="ejemplo@mail.com ">
                             </div>   
-                            <div class="imputs">
-                                <span>Tu numero de documento: </span>
-                                <input type= "number" required id= "dni" placeholder="SOLO NUMEROS!!">
+                            <div>
+                                <span class="block">Tu numero de documento: </span>
+                                <input type= "number" required placeholder="SOLO NUMEROS!!">
                             </div>    
-                            <div class="imputs">
-                                <span>Direccion: </span>
-                                <input type= "text" id= "address" >
+                            <div>
+                                <span class="block">Direccion: </span>
+                                <input type= "text" placeholder="Calle Wallaby #42, Sydney">
                             </div>                                    
-                            <div class="imputs">
-                                <span>Codigo Postal: </span>
+                            <div>
+                                <span class="block">Codigo Postal: </span>
                                 <input type= "number" id= "postal" placeholder="SOLO NUMEROS!!">
                             </div>
-                            <div class="imputs">    
-                                <span>Cuando Naciste?: </span>
+                            <div>    
+                                <span class="block">Cuando Naciste?: </span>
                                 <input type= "date" id= "birthday" placeholder="dd/mm/YYYY">
                             </div>
                         </div>
-
-                        <legend>Gustas de contenido exclusivo!!</legend>
-
-                        <table width=50% align="center">                          
-                            <tr align="margin-left">
-                                <td>Dejame un pass para loguearte:</td>
-                                <td><input type= "password" id= "pass" ></td>
-                            </tr>
-                            <tr align="margin-left">
-                                <td>Decime otra vez que no entendi:</td>
-                                <td><input type= "password" id= "repass"></td>
-                            </tr>
-                        </table>                                
-                
-
-               
-                    <legend >Contame tu genero</legend>
-                        Feminazi<input required type= "radio"  name= "genero"  >
-                        Machirulo<input required type= "radio"  name= "genero"  >
-                        NoBinario<input required type= "radio"  name= "genero"  >
-                        Transgenero<input required type= "radio"  name= "genero"  >
-                        Alguno de 112<input required type= "radio"  name= "genero"  >
-                    
-                        <br>
-                        <br>
-
+                    <legend >Tu genero</legend>
+                        <div class="line">
+                        <span>Feminazzi</span><input required type= "radio"  name= "genero"  >
+                        <span>Machirulo</span><input required type= "radio"  name= "genero"  >
+                        <span>NoBinario</span><input required type= "radio"  name= "genero"  >
+                        <span>Transgenero</span><input required type= "radio"  name= "genero"  >
+                        <span>Alguno de 112</span><input required type= "radio"  name= "genero"  >
+                        </div>
                     <legend >Cuanto estudiaste???</legend>
-                        Primario <input required type= "checkbox"  name= "estudios"  > 
-                        Secundario <input required type= "checkbox"  name= "estudios"  > 
-                        Terciario <input required type= "checkbox"  name= "estudios"  > 
-                        Universitario <input required type= "checkbox"  name= "estudios"  > 
-
+                    <select name="select">
+                        <option value="value1" selected>Primario</option>
+                        <option value="value2">Secundario</option>                      
+                        <option value="value3">Terciario</option>
+                        <option value="value4">Universitario</option>
+                        <option value="value5">Posgrado</option>
+                      </select>
+                    <legend>Gustas de contenido exclusivo!!</legend>
+                    <div class="pass">
+                        <div>
+                            <span class="block">Dejame un pass para loguearte:</span>
+                            <input type= "password" id= "pass" >
+                        </div>
+                        <div>    
+                            <span class="block">Decime otra vez que no entendi:</span>
+                            <input type= "password" id= "repass">
+                        </div>
+                    </div>
                 </fieldset>
                 
-                <div id="0">
+                <div class="texto_cliente">
                     <p>Algo para contarnos?</p>    
                     <textarea placeholder="porque sibarita es tan rica???...." width=100%></textarea> <br>
                 </div>
