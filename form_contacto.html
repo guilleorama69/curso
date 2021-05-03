@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        
+        <link rel="stylesheet" type="text/css" href="./estilos .css">
+        
+        <script>
+
+        </script>
+    </head>
+    <body>
+        <header>
+            <h2>Hola navegantes</h2>
+        </header>
+           
+            <form class="frm_contacto " method="post" action="show_data.html">
+                <fieldset>
+                    <legend>Lo basico</legend>
+                        <div class="contenedor_form">
+                            <div>                            
+                                <span class="block">Contame como te llamas:</span>
+                                <input type= "text" required placeholder="Decime cual cual cual es tu nombre ">
+                            </div>
+                            <div>    
+                                <span class="block">No te olvides tu apellido:</span>
+                                <input type= "text" required placeholder="es compuesto???">
+                            </div>    
+                            <div>    
+                                <span class="block">Donde te escrivo: </span>
+                                <input type= "email" required placeholder="ejemplo@mail.com ">
+                            </div>   
+                            <div>
+                                <span class="block">Tu numero de documento: </span>
+                                <input type= "number" required placeholder="SOLO NUMEROS!!">
+                            </div>    
+                            <div>
+                                <span class="block">Direccion: </span>
+                                <input type= "text" placeholder="Calle Wallaby #42, Sydney">
+                            </div>                                    
+                            <div>
+                                <span class="block">Codigo Postal: </span>
+                                <input type= "number" id= "postal" placeholder="SOLO NUMEROS!!">
+                            </div>
+                            <div>    
+                                <span class="block">Cuando Naciste?: </span>
+                                <input type= "date" id= "birthday" placeholder="dd/mm/YYYY">
+                            </div>
+                        </div>
+                    <legend >Tu genero</legend>
+                        <div class="line">
+                        <span>Feminazzi</span><input required type= "radio"  name= "genero"  >
+                        <span>Machirulo</span><input required type= "radio"  name= "genero"  >
+                        <span>NoBinario</span><input required type= "radio"  name= "genero"  >
+                        <span>Transgenero</span><input required type= "radio"  name= "genero"  >
+                        <span>Alguno de 112</span><input required type= "radio"  name= "genero"  >
+                        </div>
+                    <legend >Cuanto estudiaste???</legend>
+                    <select name="select">
+                        <option value="value1" selected>Primario</option>
+                        <option value="value2">Secundario</option>                      
+                        <option value="value3">Terciario</option>
+                        <option value="value4">Universitario</option>
+                        <option value="value5">Posgrado</option>
+                      </select>
+                    <legend>Gustas de contenido exclusivo!!</legend>
+                    <div class="pass">
+                        <div>
+                            <span class="block">Dejame un pass para loguearte:</span>
+                            <input type= "password" id= "pass" >
+                        </div>
+                        <div>    
+                            <span class="block">Decime otra vez que no entendi:</span>
+                            <input type= "password" id= "repass">
+                        </div>
+                    </div>
+                </fieldset>
+                
+                <div class="texto_cliente">
+                    <p>Algo para contarnos?</p>    
+                    <textarea placeholder="porque sibarita es tan rica???...." width=100%></textarea> <br>
+                </div>
+               <input type= "submit" id= "submit" value="Mandale nomas" >
+               
+            </form>  
+            
+        
+    </body>
+</html>
