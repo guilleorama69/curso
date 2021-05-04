@@ -1,19 +1,23 @@
 * {
   box-sizing: content-box;
-  border: 0.3rem solid black;
+
   margin: 0;
   padding: 0;
-  display: inline-block;
+  display: inline-flexbox;
 }
 nav {
   width: 100%;
-  border-color: chocolate;
+  background-color: chocolate;
 }
 main {
-  width: 60%;
-  border-color: darkblue;
+  width: 100%;
+  background-color: darkblue;
+  display: flex;
 }
 aside {
-  width: 40%;
-  border-color: darkgreen;
+  min-width: 40%;
+  background-color: darkgreen;
+}
+.contenedor {
+  min-width: 60%;
 }
